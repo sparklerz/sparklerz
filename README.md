@@ -4,7 +4,7 @@ I build scalable LLM training/inference systems across **multi-GPU** (PyTorch DD
 
 ## Selected work
 - **Multi-GPU LLM Fine-Tuning (monorepo)** — DDP/FSDP, ZeRO, Ray Train/Tune, MosaicML; W&B/MLflow + HF Hub for fully traceable runs.  
-  Repo: https://github.com/sparklerz/multigpu-llm-finetuning
+    - Repo: https://github.com/sparklerz/multigpu-llm-finetuning
 - **Hivemind fine-tuning (Qwen2-0.5B)** — Internet-scale data parallelism with DHT + fault tolerance; measured val-loss reductions.  
     - Article: https://medium.com/@kannansarat9/finetuning-qwen-0-5b-using-hivemind-data-parallelism-over-the-internet-e20af1b15c05
 - **Petals (LLaMA-2-70B)** — Distributed inference + Deep prompt-tuning via swarm model-parallelism.  

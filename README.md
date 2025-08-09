@@ -1,7 +1,7 @@
 # Sarat Kannan
 *Distributed training for LLMs — Stack: PyTorch DDP/FSDP · DeepSpeed ZeRO · Ray (Train/Tune) · MosaicML LLM Foundry · W&B/MLflow · HF Hub · Hivemind · Petals*
 
-I build scalable LLM training/inference systems across **multi-GPU** (PyTorch DDP/FSDP, DeepSpeed ZeRO, Ray, MosaicML LLM Foundry) and **decentralised swarms** (Hivemind, Petals). Writing experiments up so others can reproduce them.
+I build scalable LLM training/inference systems across **multi-GPU** (PyTorch DDP/FSDP, DeepSpeed ZeRO, Ray, MosaicML LLM Foundry) and **distributed swarms** (Hivemind, Petals). Writing experiments up so others can reproduce them.
 
 ## Selected work
 - **Multi-GPU LLM Fine-Tuning (monorepo)** — DDP/FSDP, ZeRO, Ray Train/Tune, MosaicML; W&B/MLflow + HF Hub for fully traceable runs.  

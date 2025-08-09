@@ -8,8 +8,8 @@ I build scalable LLM training/inference systems across **multi-GPU** (PyTorch DD
 - **Hivemind fine-tuning (Qwen2-0.5B)** — Internet-scale data parallelism with DHT + fault tolerance; measured val-loss reductions.  
     • Article: https://medium.com/@kannansarat9/finetuning-qwen-0-5b-using-hivemind-data-parallelism-over-the-internet-e20af1b15c05
 - **Petals (LLaMA-2-70B)** — Distributed inference + Deep prompt-tuning via swarm model-parallelism.  
-    • Part 1: https://medium.com/@kannansarat9/part-1-inferencing-llama-2-70b-using-petals-swarm-model-parallelism-over-the-internet-a29de8f8aef3
-    • Part 2: https://medium.com/@kannansarat9/part-2-prompt-tuning-llama-2-70b-using-petals-model-parallelism-over-the-internet-89cdee667840
+    - Part 1: https://medium.com/@kannansarat9/part-1-inferencing-llama-2-70b-using-petals-swarm-model-parallelism-over-the-internet-a29de8f8aef3
+    - Part 2: https://medium.com/@kannansarat9/part-2-prompt-tuning-llama-2-70b-using-petals-model-parallelism-over-the-internet-89cdee667840
 
 ## Writing
 Medium: https://medium.com/@kannansarat9

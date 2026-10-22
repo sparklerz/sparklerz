@@ -7,7 +7,7 @@ I build end-to-end AI/ML systems spanning **RAG**, **agentic AI**, **LLM fine-tu
     - Built a RAG app that ingests PDFs, chunks text, stores embeddings in Chroma, and supports chat over each uploaded document set.
     - Implemented hybrid retrieval that combines dense embeddings with BM25, merges ranks with Reciprocal Rank Fusion, and supports optional cross-encoder reranking.
     - Built a web Q&A mode that queries Tavily search API, Wikipedia, and arXiv in parallel with timeouts, then generates answers grounded in retrieved sources.
-    - Created an evaluation module (Hit@K, MRR) with checks via expected-text matches or gold chunk id labels.
+    - Created an evaluation module scoring Hit@K, Recall@K, Precision@K, MRR, MAP@K and nDCG@K from expected-text matches or gold chunk id labels, used to compare dense, BM25 and hybrid retrievers with and without reranking.
     - Demo: https://huggingface.co/spaces/ash001/Hybrid_RAG_Suite
     - Repo: https://github.com/sparklerz/Hybrid-RAG-Suite
 - **LangGraph Multi-Agent Orchestrator**

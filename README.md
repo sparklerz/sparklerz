@@ -8,13 +8,15 @@ I build end-to-end AI/ML systems spanning **RAG**, **agentic AI**, **LLM fine-tu
     - Implemented hybrid retrieval that combines dense embeddings with BM25, merges ranks with Reciprocal Rank Fusion, and supports optional cross-encoder reranking.
     - Built a web Q&A mode that queries Tavily search API, Wikipedia, and arXiv in parallel with timeouts, then generates answers grounded in retrieved sources.
     - Created an evaluation module scoring Hit@K, Recall@K, Precision@K, MRR, MAP@K and nDCG@K from expected-text matches or gold chunk id labels, used to compare dense, BM25 and hybrid retrievers with and without reranking.
+    - Added LangSmith observability: each chat request is one trace covering question rewrite, dense/BM25/RRF retrieval, cross-encoder reranking and the answer call, with RAG evaluation runs grouped into a single trace.
     - Demo: https://huggingface.co/spaces/ash001/Hybrid_RAG_Suite
     - Repo: https://github.com/sparklerz/Hybrid-RAG-Suite
 - **LangGraph Multi-Agent Orchestrator**
     - Built a Streamlit multi-agent chat app that routes each query to SQL, Neo4j, web tools, or a general assistant using LangGraph state graphs.
     - Implemented a read-only SQLite SQL agent with LangChain tool-calling, capped at 30 steps and 60 sec per run.
     - Built a Neo4j agent that generates Cypher from the graph schema, executes it, then answers from query results.
-    - Integrated web tools and a safe calculator, and logged each tool call.
+    - Exposed the Tools Agent's web search (DuckDuckGo), Wikipedia, arXiv and calculator tools as standalone MCP servers (FastMCP, stdio); the orchestrator is the MCP client (langchain-mcp-adapters), discovering tools at startup and calling them asynchronously.
+    - Added LangSmith observability: each chat turn is one trace with the router, every LLM call and MCP tool calls nested inside, and the Graph Agent's Cypher and answer calls grouped under one run.
     - Deployed to Hugging Face Spaces using GitHub Actions CI/CD.
     - Demo: https://huggingface.co/spaces/ash001/LangGraph_Multi-Agent_Orchestrator
     - Repo: https://github.com/sparklerz/LangGraph-Multi-Agent-Orchestrator
